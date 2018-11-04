@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Calculatrice</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Calculatrice</h1>
+        <div id="calcul">
+            <div id="header">
+                <input type="text" id="nombre" value="O" autocomplete="off" disabled />
+            </div>
+            <div id="touches">
+                <div class="buttons">7</div>
+                <div class="buttons">8</div>
+                <div class="buttons">9</div>
+                <div class="buttons">/</div>
+                <div class="buttons">4</div>
+                <div class="buttons">5</div>
+                <div class="buttons">6</div>
+                <div class="buttons">*</div>
+                <div class="buttons">1</div>
+                <div class="buttons">2</div>
+                <div class="buttons">3</div>
+                <div class="buttons">+</div>
+                <div class="buttons">.</div>
+                <div class="buttons">0</div>
+                <div class="buttons">CE</div>
+                <div class="buttons">=</div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/calculatrice1.js"></script>  
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var calc = new Calculer();
+            calc.run();
+        });
+    </script>
+</body>
+
+</html>

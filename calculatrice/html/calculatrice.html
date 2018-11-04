@@ -1,0 +1,31 @@
+<!dotype <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Calculatrice simple</title>
+</head>
+
+<body>
+    <script src="../js/calculatrice.js"></script>
+    <h1> Calculatrice</h1>
+    <p>
+        Entrer un nombre: <input type="text" id="nb1" name="nb1" />
+    </p>
+    <p>
+        + <input type="radio" id="op1" name="op" />
+        - <input type="radio" id="op2" name="op" />
+        * <input type="radio" id="op3" name="op" />
+        / <input type="radio" id="op3" name="op" />
+    </p>
+    <p>
+        Entrer un nombre: <input type="text" id="nb2" name="nb2" />
+    </p>
+    <p>
+        <input type="submit" onclick="calculer()" id="Entrer" name="Entrer" value="Entrer" />
+    </p>
+    <h2>Résultat</h2>
+    <div id="afficher"></div>
+</body>
+
+</html>
